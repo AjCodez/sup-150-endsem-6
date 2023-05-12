@@ -8,7 +8,7 @@ const auth = require('./routes/auth');
 const twitter=require('./routes/tweet');
 
 // Connect to MongoDB
-mongo.connect("mongodb://127.0.0.1:27017/twitter-clone", {useNewUrlParser: true, useUnifiedTopology: true}).then(function(){
+mongo.connect("mongodb+srv://ajit:Ajit1234@ajit.vugjw.mongodb.net/?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true}).then(function(){
     console.log('Connected to MongoDB');
 }).catch(function(err){
     console.log(err);
